@@ -15,3 +15,5 @@ This project is a fan-made, unofficial project created for personal or education
 This project is completely free and is not intended for commercial use. No claim of ownership or affiliation with Wizards of the Coast is made or implied.
 
 ## Link to GitHub page
+
+https://oliververmeulen.github.io/mtg-noob-glossary/pages/steps.html
