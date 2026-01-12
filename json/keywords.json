@@ -86,5 +86,13 @@
   {
     "name": "Mulligan",
     "description": "An optional process that allows a player to redraw their opening hand in an attempt to get a better one. In the Commander format, the London Mulligan is used: you can draw seven cards for your opening hand. If you are still unsatisfied, you may draw a new hand, but each time you do, you must discard one card for each time you've taken a mulligan and place it on the bottom of your library."
+  },
+  {
+    "name": "Tap",
+    "description": "It is the process of rotating a permanent sideways, do this to activate an ability or declare an attacker. Creatures that have attacked can not block if they have been tapped"
+  },
+  {
+    "name": "Untap",
+    "description": "It is the process of rotating a permanent back to the upright position, you untap during the beginning step."
   }
 ]

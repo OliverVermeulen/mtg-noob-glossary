@@ -109,6 +109,33 @@ body {
   margin: 1rem 0;
 }
 
+.symbols-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.symbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.symbol img {
+  width: 50%;
+  height: 50%;
+
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.symbol p {
+  margin: 2rem 0;
+  max-width: 350px;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     margin: 0 5%;

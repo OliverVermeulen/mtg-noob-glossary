@@ -12,21 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
     button.setAttribute("aria-expanded", String(!isOpen));
   });
 
-  // Only run main() on pages with #keywords-container
-  const container = document.querySelector("#keywords-container");
-  if (container) {
-    main(container);
+  // Keywords page
+  const keywordsContainer = document.querySelector("#keywords-container");
+  if (keywordsContainer) {
+    initKeywords(keywordsContainer);
+  }
+
+  // Symbols page
+  const symbolsContainer = document.querySelector("#symbols-container");
+  if (symbolsContainer) {
+    initSymbols(symbolsContainer);
   }
 });
 
-// Loop through JSON to make keywords
-async function main(container) {
-  let keywords = await getData();
+// KEYWORDS LOGIC
+async function initKeywords(container) {
+  let keywords = await getKeywordsData();
 
-  // Sort keywords alphabetically by name
+  // Sort alphabetically
   keywords.sort((a, b) => a.name.localeCompare(b.name));
 
-  // Create search bar with clear button
+  // Search bar
   const searchWrapper = document.createElement("div");
   searchWrapper.className = "search-wrapper";
   searchWrapper.innerHTML = `
@@ -38,9 +44,8 @@ async function main(container) {
   const searchInput = document.querySelector("#keyword-search");
   const clearBtn = document.querySelector("#clear-search");
 
-  // Function to render filtered keywords
   const renderKeywords = (filteredKeywords) => {
-    container.innerHTML = ""; // Clear previous items
+    container.innerHTML = "";
 
     if (filteredKeywords.length === 0) {
       const noResults = document.createElement("div");
@@ -71,19 +76,13 @@ async function main(container) {
     }
   };
 
-  // Initial render of all keywords
   renderKeywords(keywords);
 
-  // Search input event
   searchInput.addEventListener("input", (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    const filtered = keywords.filter((k) =>
-      k.name.toLowerCase().includes(searchTerm)
-    );
-    renderKeywords(filtered);
+    const term = e.target.value.toLowerCase();
+    renderKeywords(keywords.filter((k) => k.name.toLowerCase().includes(term)));
   });
 
-  // Clear button event
   clearBtn.addEventListener("click", () => {
     searchInput.value = "";
     renderKeywords(keywords);
@@ -91,7 +90,29 @@ async function main(container) {
   });
 }
 
-async function getData() {
-  const res = await fetch("../keywords.json");
+async function getKeywordsData() {
+  const res = await fetch("../json/keywords.json");
+  return await res.json();
+}
+
+// SYMBOLS LOGIC
+async function initSymbols(container) {
+  const symbols = await getSymbolsData();
+
+  for (const keyword of symbols) {
+    const symbol = document.createElement("div");
+    symbol.className = "symbol";
+
+    symbol.innerHTML = `
+      <img src="${keyword.url}" alt="${keyword.name}" />
+      <p>${keyword.description}</p>
+    `;
+
+    container.appendChild(symbol);
+  }
+}
+
+async function getSymbolsData() {
+  const res = await fetch("../json/images.json");
   return await res.json();
 }
