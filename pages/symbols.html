@@ -16,35 +16,5 @@
     <main>
       <div id="symbols-container" class="symbols-container"></div>
     </main>
-
-    <script>
-      main();
-
-      async function main() {
-        const symbols = await getData();
-        const container = document.querySelector("#symbols-container");
-
-        for (const keyword of symbols) {
-          const symbol = document.createElement("div");
-          symbol.className = "symbol";
-
-          symbol.innerHTML = `
-      <img
-        src="${keyword.url}"
-
-        alt="${keyword.name}"
-      />
-      <p>${keyword.description}</p>
-      `;
-
-          container.appendChild(symbol);
-        }
-      }
-
-      async function getData() {
-        const res = await fetch("../json/images.json");
-        return await res.json();
-      }
-    </script>
   </body>
 </html>
