@@ -16,4 +16,4 @@ This project is completely free and is not intended for commercial use. No claim
 
 ## Link to GitHub page
 
-https://oliververmeulen.github.io/mtg-noob-glossary/pages/steps.html
+https://oliververmeulen.github.io/mtg-noob-glossary/
