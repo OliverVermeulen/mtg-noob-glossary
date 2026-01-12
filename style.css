@@ -28,11 +28,11 @@ body {
   text-decoration: underline;
 }
 
-/* Step */
-.turn-step {
+/* Item */
+.item {
   margin: 1rem 0;
 }
-.step-heading {
+.item-heading {
   display: flex;
   justify-content: space-between;
 }
@@ -57,18 +57,23 @@ body {
   transform: rotate(-135deg);
 }
 
-/* Turn Step Content */
-.step-content {
+/* Item Content */
+.item-content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.2s ease, opacity 0.2s ease;
   font-size: 15px;
 }
-.turn-step.open .step-content {
+.item.open .item-content {
   max-height: 500px;
   opacity: 1;
 }
-.step-content ul {
+.item-content ul {
   margin: 0;
+  padding-left: 2rem;
+}
+.item-content p {
+  margin: 0;
+  padding-left: 2rem;
 }

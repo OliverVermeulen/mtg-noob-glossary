@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".toggle-btn").forEach((button) => {
     button.addEventListener("click", () => {
-      const step = button.closest(".turn-step");
+      const step = button.closest(".item");
       const isOpen = step.classList.contains("open");
 
       step.classList.toggle("open", !isOpen);
