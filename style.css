@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
+  font-size: 1.25rem;
 }
 .header a {
   text-decoration: none;
@@ -72,8 +73,10 @@ body {
 .item-content ul {
   margin: 0;
   padding-left: 2rem;
+  font-family: sans-serif;
 }
 .item-content p {
   margin: 0;
   padding-left: 2rem;
+  font-family: sans-serif;
 }

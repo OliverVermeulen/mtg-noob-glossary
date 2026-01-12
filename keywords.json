@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Summoning Sickness",
+    "description": "Creature can not attack or use activated abilities (meaning tap or untap) the round it was summoned unless it has the haste keyword. These creatures can still use non activated abilities."
+  },
+  {
+    "name": "Haste",
+    "description": "Ability that allows a creature to circumvent summoning sickness. Creatures with haste can attack or use activated abilities symbol from when they are summoned."
+  },
+  {
+    "name": "Permanent",
+    "description": "A card or token on the battlefield. A card stops being a permanent as it's moved to another zone by an effect or rule."
+  }
+]
