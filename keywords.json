@@ -10,5 +10,81 @@
   {
     "name": "Permanent",
     "description": "A card or token on the battlefield. A card stops being a permanent as it's moved to another zone by an effect or rule."
+  },
+  {
+    "name": "Flying",
+    "description": "Ability that makes creatures without flying unable to block creatures with flying."
+  },
+  {
+    "name": "Reach",
+    "description": "Ability that makes creatures without flying be able to block creatures with flying."
+  },
+  {
+    "name": "Vigilance",
+    "description": "Ability that allows a creature to attack without tapping."
+  },
+  {
+    "name": "Deathtouch",
+    "description": "Ability that causes any amount of damage dealt by the source to a creature to be lethal damage."
+  },
+  {
+    "name": "Cycling",
+    "description": "Ability that allows a player to pay a cost that includes discarding the card. When the ability resolves, that player draws a card."
+  },
+  {
+    "name": "Surveil",
+    "description": "Allows a player to look at a certain number of cards from the top of their library and put them in the graveyard or back on top in any order."
+  },
+  {
+    "name": "Scry",
+    "description": "Allows a player to look at a certain number of cards from the top of their library and put them on the bottom of the library or back on top in any order."
+  },
+  {
+    "name": "Flash",
+    "description": "Ability which allows the card to be cast at any time you could cast an Instant."
+  },
+  {
+    "name": "Lifelink",
+    "description": "Ability that makes it so that the players gets life back based on the amount of damage dealt by the creature"
+  },
+  {
+    "name": "Menace",
+    "description": "Ability that makes it that a creature can't be blocked except by two or more creatures."
+  },
+  {
+    "name": "Encore",
+    "description": "Ability that can be activated only if the creature is in your graveyard. You can pay a creature's encore cost and exile it from your graveyard to create a number of token copies of it equal to your number of opponents. Each of those tokens has haste, must attack that player, and is sacrificed during the end step."
+  },
+  {
+    "name": "Mill",
+    "description": "take cards from the top of your library and put them into your graveyard."
+  },
+  {
+    "name": "Trample",
+    "description": "Ability that makes an attacker with trample deal excess damage to the defending player, planeswalker or battle even if it is blocked."
+  },
+  {
+    "name": "Equip",
+    "description": "Ability found on artifacts with the subtype 'Equipment'. By paying the equip cost, you can attach the artifact to a creature you control."
+  },
+  {
+    "name": "Shroud",
+    "description": "Ability that prevents a permanent or player from being the target of spells or abilities."
+  },
+  {
+    "name": "Cascade",
+    "description": "Ability that makes exile cards from the top of your library until you exile a non land card whose mana value is less than the spell. You may cast that card without paying its mana cost if the resulting spell's mana value is less than the cascade spell's mana value. Then put all cards exiled this way that weren't cast on the bottom of your library in a random order."
+  },
+  {
+    "name": "First Strike",
+    "description": "Ability that makes a creature with first strike deal combat damage before creatures without first strike."
+  },
+  {
+    "name": "Double strike",
+    "description": "Ability that allows a creature to deal combat damage twice per combat phase — once during the first combat damage step, along with any creatures that have first strike, and again during the second combat damage step along with creatures that have neither keyword."
+  },
+  {
+    "name": "Mulligan",
+    "description": "An optional process that allows a player to redraw their opening hand in an attempt to get a better one. In the Commander format, the London Mulligan is used: you can draw seven cards for your opening hand. If you are still unsatisfied, you may draw a new hand, but each time you do, you must discard one card for each time you've taken a mulligan and place it on the bottom of your library."
   }
 ]

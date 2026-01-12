@@ -1,4 +1,4 @@
-# MTG Noob Glossary
+# Magic: The Gathering Noob Glossary
 
 This is a free to use glossary for my latest obsession Magic: The Gathering.
 
