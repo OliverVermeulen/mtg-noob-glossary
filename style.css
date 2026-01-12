@@ -1,6 +1,6 @@
 @font-face {
   font-family: Beleren;
-  src: url(./font/Beleren2016-Bold.ttf);
+  src: url(./assets/font/Beleren2016-Bold.ttf);
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   margin: 0 25%;
 }
 
+/* Page Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -26,23 +27,23 @@ body {
 .header .active-page {
   text-decoration: underline;
 }
+
+/* Step */
+.turn-step {
+  margin: 1rem 0;
+}
 .step-heading {
   display: flex;
   justify-content: space-between;
 }
 
-.turn-step {
-  margin: 1rem 0;
-}
-
+/* Toggle Content */
 .toggle-btn {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0.25rem;
 }
-
-/* Toggle Content Arrow */
 .arrow {
   display: inline-block;
   width: 0.5rem;
