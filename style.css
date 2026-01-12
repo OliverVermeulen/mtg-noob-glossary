@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Beleren;
+  src: url(./Beleren2016-Bold.ttf);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  color: #000;
+  font-size: 16px;
+  font-family: Beleren;
+}
