@@ -104,7 +104,7 @@ async function initSymbols(container) {
     symbol.className = "symbol";
 
     symbol.innerHTML = `
-      <img src="${keyword.url}" alt="${keyword.name}" />
+      <img src="${keyword.url}" alt="${keyword.name}" title="${keyword.name}" />
       <p>${keyword.description}</p>
     `;
 

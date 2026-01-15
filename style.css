@@ -11,22 +11,35 @@ body {
   color: #000;
   font-size: 1rem;
   font-family: Beleren, sans-serif;
-  margin: 0 25%;
 }
 
 /* Page Header */
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  padding: 1rem 25%;
   font-size: 1.25rem;
+  background-color: rgb(189, 189, 170);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
 }
 .header a {
   text-decoration: none;
   color: #000;
 }
+.header a:hover {
+  text-decoration: underline;
+}
 .header .active-page {
   text-decoration: underline;
+  cursor: default;
+}
+
+main {
+  margin: 0 25%;
 }
 
 /* Item */
@@ -73,18 +86,23 @@ body {
 .item-content ul {
   margin: 0;
   padding-left: 2rem;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 .item-content p {
   margin: 0;
   padding-left: 2rem;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .search-wrapper {
   display: flex;
   justify-content: end;
   gap: 0.5rem;
+  position: sticky;
+  top: 57px;
+  padding: 2rem 0 2rem;
+  background: beige;
+  z-index: 100;
 }
 
 .search-wrapper input {
@@ -109,11 +127,17 @@ body {
   margin: 1rem 0;
 }
 
+.content-container {
+  margin: 2rem 0;
+}
+
 .symbols-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
+  margin: 2rem 0;
 }
 
 .symbol {
@@ -136,8 +160,22 @@ body {
   max-width: 350px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 1rem 5%;
+  }
+  main {
     margin: 0 5%;
+  }
+  .search-wrapper {
+    padding: 1rem 0 1rem;
+  }
+
+  .content-container {
+    margin: 1rem 0;
+  }
+
+  .symbols-container {
+    margin: 1rem 0;
   }
 }

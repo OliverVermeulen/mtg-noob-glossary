@@ -94,5 +94,25 @@
   {
     "name": "Untap",
     "description": "It is the process of rotating a permanent back to the upright position, you untap during the beginning step."
+  },
+  {
+    "name": "Hexproof",
+    "description": "Ability that prevents a permanent or player from being targeted by spells or abilities your opponents control."
+  },
+  {
+    "name": "Indestructible",
+    "description": "Ability that prevents a permanent from being destroyed by damage or effects that say 'destroy'."
+  },
+  {
+    "name": "Protection",
+    "description": "Ability that prevents damage, targeting, blocking, and enchanting from sources of a specified quality."
+  },
+  {
+    "name": "Ward",
+    "description": "Ability that counters spells or abilities that target the permanent unless an additional cost is paid."
+  },
+  {
+    "name": "Sacrifice",
+    "description": "To move a permanent you control from the battlefield to the graveyard. This does not target."
   }
 ]
