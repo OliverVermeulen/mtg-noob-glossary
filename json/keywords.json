@@ -114,5 +114,25 @@
   {
     "name": "Sacrifice",
     "description": "To move a permanent you control from the battlefield to the graveyard. This does not target."
+  },
+  {
+    "name": "Defender",
+    "description": "Ability that makes a creature unable to block, it can only be used to defend."
+  },
+  {
+    "name": "Land Drop",
+    "description": "Term that means to play a land in a turn."
+  },
+  {
+    "name": "Crew",
+    "description": "Ability that allows vehicles to become creatures until end of turn. To add crew tap other creatures."
+  },
+  {
+    "name": "Saddle",
+    "description": "Ability similar to Crew, to add saddle tap other creatures. Unlike with Crew creatures with saddle can attack and block when they're unsaddled."
+  },
+  {
+    "name": "Counter",
+    "description": "Counter a target spell, it negates the effect and the spell is put into the graveyard."
   }
 ]
