@@ -134,5 +134,25 @@
   {
     "name": "Counter",
     "description": "Counter a target spell, it negates the effect and the spell is put into the graveyard."
+  },
+  {
+    "name": "Landfall",
+    "description": "Ability that makes it so that when you play a land, an effect is triggered."
+  },
+  {
+    "name": "Convoke",
+    "description": "Ability that allows you to tap your creatures to help pay for a spell. Each creature you tapped reduces that spell's cost by one mana of that creature's color."
+  },
+  {
+    "name": "Dredge",
+    "description": "Ability that allows you to return a creature card from your graveyard to your hand. To activate this ability, you must exile the card with dredge from your graveyard and mill a number of cards equal to its dredge number."
+  },
+  {
+    "name": "Myriad",
+    "description": "Ability that makes token copies of a card that are tapped and attacking for each other opponent that allows you to attack multiple opponents at the same. These tokens are exiled at the end of combat."
+  },
+  {
+    "name": "Delirium",
+    "description": "Ability that makes cards better or triggers abilities if there are four or more card types among cards in your graveyard."
   }
 ]
